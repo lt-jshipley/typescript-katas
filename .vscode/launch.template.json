@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -10,6 +7,10 @@
             "name": "_playground",
             "skipFiles": [
                 "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
             ],
             "program": "${workspaceFolder}/src/playground.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
@@ -24,6 +25,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
             "program": "${workspaceFolder}/src/katas/fizz-buzz/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
@@ -36,6 +41,10 @@
             "name": "K: CoinChanger",
             "skipFiles": [
                 "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
             ],
             "program": "${workspaceFolder}/src/katas/coin-changer/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
@@ -50,6 +59,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
             "program": "${workspaceFolder}/src/katas/birthday-calendar/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
@@ -63,6 +76,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
             "program": "${workspaceFolder}/src/katas/mars-rover/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
@@ -72,9 +89,35 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "K: GameOfLife",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
+            "program": "${workspaceFolder}/src/katas/conways-game-of-life/kata.runner.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/build/**/*.js"
+            ],
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "WS.01: Variables",
             "skipFiles": [
                 "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
             ],
             "program": "${workspaceFolder}/src/workshops/01.variables.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
@@ -89,6 +132,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
             "program": "${workspaceFolder}/src/workshops/02.conditionals.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
@@ -101,6 +148,10 @@
             "name": "WS.10: Debugging",
             "skipFiles": [
                 "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
             ],
             "program": "${workspaceFolder}/src/workshops/10.debugging.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
