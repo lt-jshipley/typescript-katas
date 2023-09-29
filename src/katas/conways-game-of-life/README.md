@@ -12,7 +12,8 @@
 - The death rule has two statements: isolation and overcrowding. In isolation,  any live cell with zero or one neighbours will die in the next generation. Whereas in overcrowding, any live cell with four or more neighbours also dies in the next generation.  
 - The survival rule states that any live cell with two or three neighbours will remain alive into the next generation. 
 
-
+##### The Incredible Story of The Game of Life
 > https://www.youtube.com/watch?v=jvSp6VHt_Pc
 
+##### Let’s BUILD a COMPUTER in CONWAY's GAME of LIFE
 > https://www.youtube.com/watch?v=Kk2MH9O4pXY
