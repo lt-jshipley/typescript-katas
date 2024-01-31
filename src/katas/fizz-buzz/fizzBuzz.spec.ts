@@ -1,51 +1,25 @@
 import { fizzBuzz } from './fizzBuzz'
 
 describe('fizzBuzz', () => {
-  it('should return a list whose length is the same as the initial number', () => {
-    const given = 2
+  it.each([
+    1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14
+  ])('should return the numeric value when the number is not divisible by 3 or 5', (given: number) => {
+    const actual = fizzBuzz(given);
+    expect(actual).toEqual(given);
+  });
 
-    const actual = fizzBuzz(given)
+  it('should return fizz when the number is divisible by 3', () => {
+    const actual = fizzBuzz(3);
+    expect(actual).toEqual('fizz');
+  });
 
-    expect(actual).toHaveLength(2)
-  })
+  it('should return buzz when the number is divisible by 5', () => {
+    const actual = fizzBuzz(5);
+    expect(actual).toEqual('buzz');
+  });
 
-  it('should replace fizz whenever there is a number that is divisible by 3', () => {
-    const given = 3
-
-    const actual = fizzBuzz(given)
-
-    expect(actual).toEqual([1, 2, 'fizz'])
-  })
-
-  it('should replace buzz whenever there is a number that is divisible by 5', () => {
-    const given = 5
-
-    const actual = fizzBuzz(given)
-
-    expect(actual).toEqual([1, 2, 'fizz', 4, 'buzz'])
-  })
-
-  it('should replace with fizzbuzz whenever there is a number that is divisible by 3 and by 5', () => {
-    const given = 15
-
-    const actual = fizzBuzz(given)
-
-    expect(actual).toEqual([
-      1,
-      2,
-      'fizz',
-      4,
-      'buzz',
-      'fizz',
-      7,
-      8,
-      'fizz',
-      'buzz',
-      11,
-      'fizz',
-      13,
-      14,
-      'fizzbuzz'
-    ])
-  })
-})
+  it('should return fizzbuzz when the number is divisible by 3 and 5', () => {
+    const actual = fizzBuzz(15);
+    expect(actual).toEqual('fizzbuzz');
+  });
+});
