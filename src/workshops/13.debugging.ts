@@ -169,8 +169,8 @@ function defendAgainstAttack( d_type: any, dmg: any, ap: any, srpe_att: any, _ch
 // Recieved -> "You Sir Joseph have perished. You respawn back at town square but have suffered loss in level. You are now level 1."
 // Expected -> "You have suffered 12 wounds and now have 8 health left."
 
-// const result = defendAgainstAttack('standard', 32, 2, false, null);
-// console.log(result);
+const shinyResult1 = defendAgainstAttack('standard', 32, 2, false, null);
+console.log(shinyResult1);
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -179,7 +179,7 @@ function defendAgainstAttack( d_type: any, dmg: any, ap: any, srpe_att: any, _ch
 // Recieved -> "You suffered no damage from the attack, way to go!"
 // Expected -> "You suffered no damage from the attack, way to go! Lucky day! You defended the attack so well you gain 1 HP!"
 
-const result = defendAgainstAttack('standard', 1, 0, false, null);
-console.log(result);
+const shinyResult2 = defendAgainstAttack('standard', 1, 0, false, null);
+console.log(shinyResult2);
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
