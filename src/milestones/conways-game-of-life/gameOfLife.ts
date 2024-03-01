@@ -1,4 +1,4 @@
-import { cleanPrint } from '@src/util/console.helpers';
+import { cleanPrint } from '@src/workshops/util/console.helpers';
 
 export function performKata(): void {
   cleanPrint('Hello Game of Life.');

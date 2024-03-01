@@ -4,7 +4,7 @@
 // need to maintain hard to read code, this makes for some good 
 // Bug & Debug learning sessions.
 
-import { ENGINE } from '../util/10.debugger.engine';
+import { ENGINE } from './util/13.debugger.engine';
 
 let c_name = 'Sir Joseph';
 let c_class = 'Knight';
