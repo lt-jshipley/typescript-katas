@@ -29,7 +29,7 @@
                 "-r", "ts-node/register",
                 "-r", "tsconfig-paths/register"
             ],
-            "program": "${workspaceFolder}/src/katas/fizz-buzz/kata.runner.ts",
+            "program": "${workspaceFolder}/src/milestones/fizz-buzz/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
@@ -46,7 +46,7 @@
                 "-r", "ts-node/register",
                 "-r", "tsconfig-paths/register"
             ],
-            "program": "${workspaceFolder}/src/katas/coin-changer/kata.runner.ts",
+            "program": "${workspaceFolder}/src/milestones/coin-changer/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
@@ -63,7 +63,7 @@
                 "-r", "ts-node/register",
                 "-r", "tsconfig-paths/register"
             ],
-            "program": "${workspaceFolder}/src/katas/birthday-calendar/kata.runner.ts",
+            "program": "${workspaceFolder}/src/milestones/birthday-calendar/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
@@ -80,7 +80,7 @@
                 "-r", "ts-node/register",
                 "-r", "tsconfig-paths/register"
             ],
-            "program": "${workspaceFolder}/src/katas/mars-rover/kata.runner.ts",
+            "program": "${workspaceFolder}/src/milestones/mars-rover/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
@@ -97,7 +97,7 @@
                 "-r", "ts-node/register",
                 "-r", "tsconfig-paths/register"
             ],
-            "program": "${workspaceFolder}/src/katas/conways-game-of-life/kata.runner.ts",
+            "program": "${workspaceFolder}/src/milestones/conways-game-of-life/kata.runner.ts",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
